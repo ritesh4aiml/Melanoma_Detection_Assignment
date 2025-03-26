@@ -1,5 +1,5 @@
-# Project Name
-> Outline a brief description of your project.
+# Project Name : Melanoma Detection Using Custom CNN
+> This project aims to develop a custom Convolutional Neural Network (CNN) model to detect melanoma, a deadly form of skin cancer, from images of skin lesions. The model is trained on a dataset containing images of various skin cancer types, including melanoma, and is designed to assist dermatologists by automating the detection process. By leveraging deep learning techniques and image classification, this model helps in early diagnosis, potentially reducing manual efforts and enhancing diagnostic accuracy.
 
 
 ## Table of Contents
@@ -8,45 +8,40 @@
 * [Conclusions](#conclusions)
 * [Acknowledgements](#acknowledgements)
 
-<!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
+- Background: Melanoma is one of the deadliest forms of skin cancer. Early detection can significantly improve the chances of survival, which is why an automated system to detect melanoma can be beneficial for   dermatologists. This project aims to build a custom Convolutional Neural Network (CNN) model for melanoma detection from skin lesion images.
 
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Business Problem: The business problem this project addresses is the need for efficient tools to assist dermatologists in detecting melanoma early. Manual evaluation of skin lesions is time-consuming, and an automated system can help speed up the diagnosis process, reducing errors and workload.
+
+- Dataset: The dataset used in this project is from the ISIC (International Skin Imaging Collaboration) archive, which contains 2357 images of various skin cancer types, including melanoma.
+  The dataset is split into 9 categories:
+  Actinic keratosis, Basal cell carcinoma, Dermatofibroma, Melanoma, Nevus, Pigmented benign keratosis, Seborrheic keratosis, Squamous cell carcinoma, Vascular lesion
+
+  The images were split into training and testing directories, with data augmentation applied to improve the model's performance and reduce overfitting.
+
+
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- The custom CNN model shows promising results, with accuracy gradually increasing through training. However, we observed some overfitting, which was addressed with data augmentation techniques.
+- After applying augmentation, the model's performance improved, particularly in its ability to generalize across different types of skin lesions.
+- Handling class imbalances with the Augmentor library significantly improved model robustness, especially for underrepresented classes.
+- The model's final validation accuracy and loss show satisfactory results, indicating its potential for real-world deployment in aiding melanoma detection.
 
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- TensorFlow (2.x) - version 2.15.0
+- Matplotlib - version 3.8.0
+- Numpy - version 1.26.4
+- Pandas - version 2.2.2
+- PIL (Python Imaging Library) - version 11.0.0
+- Augmentor - version 0.2.12
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
+- This project was inspired by Upgrad IIIT Bangalore PG program on ML and AI.
+- This project was based on Convolutional Neural Networks Tutorial of this course.
 
 
 ## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+Created by [@ritesh4aiml] - feel free to contact me!
