@@ -44,4 +44,4 @@
 
 
 ## Contact
-Created by [@ritesh4aiml] - feel free to contact me!
+Created by Ritesh[@ritesh4aiml] - feel free to contact me!
